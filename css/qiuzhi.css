@@ -1,3 +1,89 @@
+.ddd{
+    background-color: rgba(217,167,194,1);
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    min-height: 700px;
+    display: block;
+    z-index: 60;
+}
+
+@keyframes myfirst
+{
+    0%   { opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {transform:perspective(600px)  rotateX(0deg) skew(0,0);
+        background-color: rgba(143,86,216,1);
+        opacity: 1;}
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%   { opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {-moz-transform:perspective(600px)  rotateX(0deg)  skew(0,0);
+        background-color: rgba(143,86,216,1);
+        opacity: 1;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    0% {opacity: 0; }
+    50% {opacity: 0.5;}
+    100% {-webkit-transform:perspective(600px)  rotateX(0deg)  skew(0,0);
+        background-color:rgba(143,86,216,1);
+        opacity: 1;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%  { opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {-o-transform:perspective(600px)  rotateX(0deg)  skew(0,0);
+        background-color: rgba(143,86,216,1);
+        opacity: 1;}
+}
+.wrap1,.wrap2,.wrap3,.wrap4,.wrap5,.wrap6,.wrap7{
+    transform:perspective(900px) rotateX(-120deg) skew(30deg,0);
+    -webkit-transform:perspective(900px) rotateX(-120deg) skew(30deg,0);
+    -o-transform:perspective(900px) rotateX(-120deg) skew(30deg,0);
+    -moz-transform:perspective(900px) rotateX(-120deg)  skew(30deg,0);
+    transform-origin: 100% 100%;
+    opacity:0;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgba(143,86,100,1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin: 300px auto;
+    font-size:60px;
+    color: #fff;
+    animation: myfirst 3s  ease-in-out;
+    -webkit-animation: myfirst 3s  ease-in-out;
+    -o-animation: myfirst 3s  ease-in-out;
+    -moz-animation: myfirst 3s  ease-in-out;
+}
+.wrap2{
+    animation-delay: 0s;
+}
+.wrap3{
+    animation-delay: 0.3s;
+}
+.wrap4{
+    animation-delay: 0.6s;
+}
+.wrap5{
+    animation-delay: 1s;
+}
+.wrap6{
+    animation-delay: 1.5s;
+}.wrap7{
+    animation-delay: 2s;
+}
 .section1{
     position: relative;
     background: url("picture/sky.jpg") 0 0 no-repeat;
@@ -76,7 +162,7 @@
     position: absolute;
     bottom:0;
     width: 150px;
-    z-index: 80;
+    z-index: 50;
     height: 100px;
     display: block;
     float: left;
@@ -109,16 +195,39 @@
 }
 
 .mess{
-    width: 300px;
-    padding: 20px 40px;
     margin: 150px auto;
     display:none;
     color: rgba(143,86,216,1)!important;
-    background-color: rgba(160,215,231,1);
     border-radius: 9px;
 }
+.mess1{
+    width: 280px;
+    padding: 10px 40px;
+    background-color: rgba(160,215,231,0.6);
+}
+.mess2{
+    width: 330px;
+    padding: 10px 30px;
+    background-color: rgba(160,215,231,1);
+}
+.mess2 p{
+    margin: 5px auto!important;
+}
+.mess3{
+    width: 300px;
+    padding: 10px 30px;
+    margin-left: 20px!important;
+    background-color: rgba(160,215,231,0.6);
+}
 .mess3 p{
-    margin: 10px 5px;
+    margin: 8px 5px;
+}
+.dot{
+    width: 4px;
+    height: 4px;
+    border-radius:50% ;
+    background-color: #000;
+
 }
 
 #title{
