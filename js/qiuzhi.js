@@ -115,7 +115,7 @@ $(function(){
             opacity:"0"
         },2000);
     },4800);
-    var $pic = $(".pictureShow .pic");
+    var $pic = $(".pictureShow a .pic");
     showPic($pic);
 });
 
