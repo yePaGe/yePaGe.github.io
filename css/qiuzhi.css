@@ -4,7 +4,7 @@
     position: absolute;
     top:0;
     left: 0;
-    min-height:2000px;
+    min-height:1000px;
     display: block;
     z-index: 60;
 }
@@ -197,18 +197,18 @@
 .mess{
     margin: 150px auto;
     display:none;
-    color: rgba(143,86,216,1)!important;
+    color: rgba(0,0,0,1);
     border-radius: 9px;
 }
 .mess1{
     width: 280px;
     padding: 10px 40px;
-    background-color: rgba(160,215,231,0.6);
+    background:rgba(242,242,234,0.6);
 }
 .mess2{
     width: 330px;
     padding: 10px 30px;
-    background-color: rgba(160,215,231,1);
+    background:rgba(242,242,234,0.8);
 }
 .mess2 p{
     margin: 5px auto!important;
@@ -217,7 +217,7 @@
     width: 300px;
     padding: 10px 30px;
     margin-left: 20px!important;
-    background-color: rgba(160,215,231,0.6);
+    background:rgba(242,242,234,0.6);
 }
 .mess3 p{
     margin: 8px 5px;
@@ -313,17 +313,17 @@
      position: relative;
      top:0;
      left: 0;
-     width: 280px;
+     width: 300px;
  }
  .pic8{
      position: absolute;
      top: 0;
-     left: 300px;
+     left: 350px;
      width: 350px;
  }.pic9{
-     position: absolute;
-     top: 200px;
-     left: 300px;
+     position:relative;
+   top: 110px;
+   left: 46px;
      width: 350px;
  }
 .workMess{
