@@ -109,6 +109,12 @@ $(function(){
 
         }
     });
+
+    setTimeout(function (){
+        $(".ddd").animate({
+            opacity:"0"
+        },2000);
+    },4800);
     var $pic = $(".pictureShow .pic");
     showPic($pic);
 });
@@ -120,7 +126,7 @@ function showPic($ele) {
             "margin-top":"-50px"
         })
     },function () {
-        $(this).css("z-index","0");
+        $(this).css("z-index","50");
         $(this).animate({
             "margin-top":"0"
         })
